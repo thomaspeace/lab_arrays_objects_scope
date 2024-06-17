@@ -32,7 +32,7 @@ unitedKingdom = [
  * Q1. Add some tourist attractions to England
  */
 
-unitedKingdom[1].touristAttractions = ["Big Ben", "Stonehenge"]
+unitedKingdom[1].touristAttractions = ["Big Ben", "Stonehenge"];
 england = unitedKingdom[1];
 
 // console.log(england);
@@ -41,7 +41,7 @@ england = unitedKingdom[1];
  * Q2. Change the capital of Wales to "Cardiff"
  */
 
-unitedKingdom[2].capital = "Cardiff"
+unitedKingdom[2].capital = "Cardiff";
 wales = unitedKingdom[2];
 
 // console.log(wales);
