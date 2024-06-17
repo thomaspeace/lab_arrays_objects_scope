@@ -32,7 +32,8 @@ unitedKingdom = [
  * Q1. Add some tourist attractions to England
  */
 
-england = null;
+unitedKingdom[1].touristAttractions = ["Big Ben", "Stonehenge"]
+england = unitedKingdom[1];
 
 // console.log(england);
 
@@ -40,7 +41,8 @@ england = null;
  * Q2. Change the capital of Wales to "Cardiff"
  */
 
-wales = null;
+unitedKingdom[2].capital = "Cardiff"
+wales = unitedKingdom[2];
 
 // console.log(wales);
 
@@ -48,10 +50,16 @@ wales = null;
  * Q3. Find a method in the documentation which will give you all of the available keys for Northern Ireland
  */
 
-northernIrelandKeys = null;
+northernIrelandKeys = Object.keys(unitedKingdom[3]);
 
-// console.log(northernIrelandKeys);
+console.log(northernIrelandKeys);
 
 /**
  * Q4. Use an if statement to compare the population of Scotland to the population of Wales, and say which is bigger.
  */
+
+if(unitedKingdom[0].population > unitedKingdom[2].population){
+  console.log("The population of " + unitedKingdom[0].name + " is greater than " + unitedKingdom[2].name);
+} else {
+  console.log("The population of "+ unitedKingdom[2].name + "is greater than " + unitedKingdom[0].name);
+}

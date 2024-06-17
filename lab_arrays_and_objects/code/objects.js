@@ -43,7 +43,7 @@ catBreed = cat.breed;
  * Q3. It's the tortoise's birthday! Add one to her current age.
  */
 
-tortoise["age"]++
+tortoise["age"]++;
 // console.log(tortoise)
 
 /**
@@ -70,7 +70,7 @@ parrot = {
 /**
  * Q6. Ella's favourite food is dandelion, add this information to her object
  */
-tortoise["favouriteFood"] = "Dandelion"
+tortoise["favouriteFood"] = "Dandelion";
 // console.log(tortoise);
 
 /**
