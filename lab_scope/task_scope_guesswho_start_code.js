@@ -1,21 +1,21 @@
 // // GUESS 1 ///////////////////
-let guess = {
-  hair_colour: "red",
-  eye_colour: "blue",
-  hat: false,
-  glasses: true,
-  firstName: "Joseph",
-};
+// let guess = {
+//   hair_colour: "red",
+//   eye_colour: "blue",
+//   hat: false,
+//   glasses: true,
+//   firstName: "Joseph",
+// };
 
-const guessWho = function () {
-  return `Guess who is ${guess.firstName}`;
-};
+// const guessWho = function () {
+//   return `Guess who is ${guess.firstName}`;
+// };
 
-const finalAnswer = guessWho();
-console.log(finalAnswer);
-// // Prediction: 
+// const finalAnswer = guessWho();
+// console.log(finalAnswer);
+// // Prediction: Joseph
 
-// // GUESS 2 ///////////////////
+// GUESS 2 ///////////////////
 
 // let firstName = "Donna";
 
@@ -30,6 +30,7 @@ console.log(finalAnswer);
 
 // const guess2 = `Guess Who is ${firstName}`;
 // console.log("guess2: ", guess2);
+// Prediction: Guess 1 is Liz, 2 is Donna because Liz redefines firstName in the function for guess1
 
 // // GUESS 3 ///////////////////
 
@@ -61,6 +62,7 @@ console.log(finalAnswer);
 
 // const finalAnswer = guessWho();
 // console.log(finalAnswer);
+// Prediction: Chris, as changeHat changes to true, which is truthy, and so the name is changed to Chris.
 
 // // GUESS 4 ///////////////////
 
@@ -76,26 +78,29 @@ console.log(finalAnswer);
 
 // const finalAnswer = guessWho();
 // console.log(finalAnswer);
+// Prediction: Ashely. I got it wrong but I now understand why, line 72 is a block scope variable so only Ashley within the if statement.
 
 // // GUESS 5 ///////////////////
 
-// const guess = {
-//   hair_colour: "blonde",
-//   eye_colour: "brown",
-//   hat: false,
-//   glasses: false,
-//   firstName: "Jennifer",
-// };
+const guess = {
+  hair_colour: "blonde",
+  eye_colour: "brown",
+  hat: false,
+  glasses: false,
+  firstName: "Jennifer",
+};
 
-// const changeGuess = function () {
-//   guess = {
-//     hair_colour: "blonde",
-//     eye_colour: "blue",
-//     hat: false,
-//     glasses: false,
-//     firstName: "Kyle",
-//   };
-// };
+const changeGuess = function () {
+  guess = {
+    hair_colour: "blonde",
+    eye_colour: "blue",
+    hat: false,
+    glasses: false,
+    firstName: "Kyle",
+  };
+};
 
-// changeGuess();
-// console.log(`Guess Who is ${guess.firstName}`);
+changeGuess();
+console.log(`Guess Who is ${guess.firstName}`);
+
+// Prediction: Error, guess is constat
